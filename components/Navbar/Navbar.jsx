@@ -1,4 +1,7 @@
-import React from 'react'
+"use client"
+
+import Link from "next/link"
+import React from 'react';
 
 function Navbar() {
     return (
@@ -9,21 +12,22 @@ function Navbar() {
 
 
         <div className="flex gap-6 text-gray-100 text-xl font-lg">
+
           <a href="#" className="relative group">
             <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Home</span>
           </a>
-          <a href="#" className="relative group">
+          <Link href="/quiz">
             <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Quiz</span>
-          </a>
-          <a href="#" className="relative group">
+          </Link>
+          <Link href="/study_timer">
             <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Study Timer</span>
-          </a>
-          <a href="#" className="relative group">
+          </Link>
+          <Link href="/doubt_solver">
             <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Doubt Solver</span>
-          </a>
-          <a href="#" className="relative group">
+          </Link>
+          <Link href="/daily_challenge">
             <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Daily Challenge</span>
-          </a>
+          </Link>
         </div>
       </nav>
     );
