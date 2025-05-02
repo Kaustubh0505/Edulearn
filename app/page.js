@@ -1,6 +1,8 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 import React from 'react';
+import Link from "next/link"
+
 
 function Home() {
   return (
@@ -41,13 +43,13 @@ function Home() {
             </div>
             <h2 className="font-extrabold text-2xl bg-clip-text text-blue-900 mb-2 text-center">Quiz</h2>
             <p className="text-blue-900 mb-6 text-center font-medium">Test your skills with quizzes covering various topics and difficulty levels.</p>
-            <p
+            <Link
 
-              className="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-              href="#"
+              className="flex mx-15 items-center justify-center cursor-pointer w-1/2 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full hover:bg-transparent hover:border-black hover:text-black text-l font-semibold"
+              href="/quiz"
             >
               Quiz
-            </p>
+            </Link>
           </div>
 
           <div className="bg-blue-50 shadow-lg rounded-2xl p-8 w-80 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-indigo-100">
@@ -56,13 +58,13 @@ function Home() {
             </div>
             <h2 className="font-extrabold text-2xl bg-clip-text text-blue-900 mb-2 text-center">AI Doubt Solver</h2>
             <p className="text-blue-900 mb-6 text-center font-medium">Solve your doubts easily with AI explanations crafted for you.</p>
-            <p
+            <Link
 
-              className="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-              href="#"
+              className="flex mx-15 items-center justify-center cursor-pointer w-1/2 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full hover:bg-transparent hover:border-black hover:text-black text-l font-semibold"
+              href="/doubt_solver"
             >
               Ask Gemini
-            </p>
+            </Link>
           </div>
         </div>
 
@@ -78,13 +80,13 @@ function Home() {
             </div>
             <h2 className="font-extrabold text-2xl bg-clip-text text-blue-900 mb-2 text-center">Daily Timer</h2>
             <p className="text-blue-900 mb-6 text-center font-medium">Boost productivity with our Pomodoro timer. Stay focused and efficient.</p>
-            <p
+            <Link
 
-              className="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-              href="#"
+              className="flex mx-15 items-center justify-center cursor-pointer w-1/2 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full hover:bg-transparent hover:border-black hover:text-black text-l font-semibold"
+              href="/study_timer"
             >
               Timer
-            </p>
+            </Link>
           </div>
 
           <div className="bg-blue-50 shadow-lg rounded-2xl p-8 w-80 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-indigo-100">
@@ -93,13 +95,13 @@ function Home() {
             </div>
             <h2 className="font-extrabold text-2xl bg-clip-text text-blue-900 mb-2 text-center">Daily Challenge</h2>
             <p className="text-blue-900 mb-6 text-center font-medium">Challenge yourself daily — small steps lead to big achievements!</p>
-            <p
+            <Link
 
-              className="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
-              href="#"
+              className="flex mx-11 items-center justify-center cursor-pointer w-2/3 py-2.5 text-center text-white duration-200 bg-gray-900 border-2 border-black rounded-full hover:bg-transparent hover:border-black hover:text-black text-l font-semibold"
+              href="/daily_challenge"
             >
               Daily Challenge
-            </p>
+            </Link>
           </div>
         </div>
       </div>
