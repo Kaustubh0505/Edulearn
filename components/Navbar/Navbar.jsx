@@ -13,20 +13,20 @@ function Navbar() {
 
         <div className="flex gap-6 text-gray-100 text-xl font-lg">
 
-          <a href="#" className="relative group">
-            <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Home</span>
-          </a>
+          <Link href="#" className="relative group">
+            <span className="text-gray-450 group-hover:text-white font-semibold transition-colors duration-300">Home</span>
+          </Link>
           <Link href="/quiz">
-            <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Quiz</span>
+            <span className="text-gray-450 font-semibold group-hover:text-white transition-colors duration-300">Quiz</span>
           </Link>
           <Link href="/study_timer">
-            <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Study Timer</span>
+            <span className="text-gray-450 font-semibold group-hover:text-white transition-colors duration-300">Study Timer</span>
           </Link>
           <Link href="/doubt_solver">
-            <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Doubt Solver</span>
+            <span className="text-gray-450 font-semibold group-hover:text-white transition-colors duration-300">Doubt Solver</span>
           </Link>
           <Link href="/daily_challenge">
-            <span className="text-gray-450 group-hover:text-white transition-colors duration-300">Daily Challenge</span>
+            <span className="text-gray-450 font-semibold group-hover:text-white transition-colors duration-300">Daily Challenge</span>
           </Link>
         </div>
       </nav>

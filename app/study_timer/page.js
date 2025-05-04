@@ -43,9 +43,9 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="bg-gray-100">
       <Navbar />
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-4">
+      <div className="mt-20 mb-45 flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold mb-2 text-gray-900">Daily Study Timer</h1>
         <p className="text-gray-500 mb-10">Stay focused and productive with the Pomodoro technique</p>
 
