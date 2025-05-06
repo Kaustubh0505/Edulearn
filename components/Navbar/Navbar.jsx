@@ -13,7 +13,7 @@ function Navbar() {
 
         <div className="flex gap-6 text-gray-100 text-xl font-lg">
 
-          <Link href="#" className="relative group">
+          <Link href="/home" className="relative group">
             <span className="text-gray-450 group-hover:text-white font-semibold transition-colors duration-300">Home</span>
           </Link>
           <Link href="/quiz">
