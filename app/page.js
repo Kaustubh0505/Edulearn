@@ -66,7 +66,7 @@ export default function LoginSignup() {
               Don't have an account?
               <button
                 onClick={() => setIsLogin(false)}
-                className="text-blue-600 font-semibold hover:underline"
+                className="text-blue-600 cursor-pointer font-semibold hover:underline"
               >
                 Sign up
               </button>
@@ -76,7 +76,7 @@ export default function LoginSignup() {
               Already have an account?
               <button
                 onClick={() => setIsLogin(true)}
-                className=" text-blue-600 font-semibold hover:underline"
+                className=" text-blue-600 cursor-pointer font-semibold hover:underline"
               >
                 Login
               </button>

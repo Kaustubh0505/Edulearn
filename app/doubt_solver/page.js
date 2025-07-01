@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar/Navbar';
@@ -45,8 +45,6 @@ const DoubtSolver = () => {
     } catch (error) {
       console.error("Gemini error:", error)
       setGeminiAns("Gemini is currently unavailable. Please try again in a bit.")
-    } finally {
-      setIsThinking(false)
     }
   };
 
@@ -61,9 +59,9 @@ const DoubtSolver = () => {
 
       <div className="flex-grow flex justify-center mt-10 mb-16 px-4">
         <div className="bg-white max-w-2xl rounded-xl shadow-lg p-6">
-          <label className="text-lg font-semibold mb-3 block">
+          <div className="text-lg font-semibold mb-3 block">
             What would you like to know?
-          </label>
+          </div>
 
           <div className="flex flex-wrap gap-2 mb-4">
             {suggestedQuestions.map((question, index) => (
@@ -88,7 +86,7 @@ const DoubtSolver = () => {
           <button
             onClick={askGemini}
             disabled={isThinking}
-            className="mt-3 w-full bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-xl transition disabled:opacity-50"
+            className="mt-3 w-full bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-xl disabled:opacity-50"
           >
             {isThinking ? "Solving your doubt..." : "Send to Gemini"}
           </button>
