@@ -60,21 +60,21 @@ export default function App() {
           <div className="flex space-x-4">
             <button
               onClick={() => setIsRunning((prev) => !prev)}
-              className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center hover:bg-green-200"
+              className="w-12 h-12 bg-green-100 text-green-600 cursor-pointer rounded-full flex items-center justify-center hover:bg-green-200"
             >
               <img src={isRunning ? "/pause.png" : "/play1.png"} className="w-6 h-6" />
             </button>
 
             <button
               onClick={reset}
-              className="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center hover:bg-gray-200"
+              className="w-12 h-12 bg-gray-100 text-gray-600 cursor-pointer rounded-full flex items-center justify-center hover:bg-gray-200"
             >
               <img src="/reset.png" className="w-6 h-6" />
             </button>
 
             <button
               onClick={() => setAudioOn((prev) => !prev)}
-              className="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center hover:bg-gray-200"
+              className="w-12 h-12 bg-gray-100 text-gray-600 cursor-pointer rounded-full flex items-center justify-center hover:bg-gray-200"
             >
               <img
                 src={audioOn ? "/volume-on.png" : "/volume-off.png"}
@@ -84,7 +84,7 @@ export default function App() {
 
             <button
               onClick={() => setShowSettings(true)}
-              className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center hover:bg-indigo-200"
+              className="w-12 h-12 bg-indigo-100 text-indigo-600 cursor-pointer rounded-full flex items-center justify-center hover:bg-indigo-200"
             >
               <img src="/settings.png" className="w-6 h-6" />
             </button>

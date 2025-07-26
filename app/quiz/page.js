@@ -4,6 +4,7 @@ import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 
 const Quiz = () => {
+  const [loading,setLoading] = useState(false);
   const [categories, setCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -21,14 +22,24 @@ const Quiz = () => {
   };
 
   useEffect(() => {
+    setLoading(true);
+  
     fetch('https://opentdb.com/api_category.php')
       .then(res => res.json())
-      .then(data => setCategories(data.trivia_categories))
-      .catch(err => console.error('Error fetching categories:', err));
+      .then(data => {
+        setCategories(data.trivia_categories);
+        setLoading(false)
+      })
+      .catch(err => {
+        console.error('Error fetching categories:', err);
+        setLoading(false)
+      });
   }, []);
-
+  
+  
   const filtered = categories.filter(cat =>
     cat.name.toLowerCase().includes(searchTerm.toLowerCase())
+    
   );
 
   const startQuiz = () => {
@@ -78,6 +89,11 @@ const Quiz = () => {
                   />
                 </div>
               </div>
+
+              {loading && <div className="flex text-2xl font-bold flex-wrap justify-center">
+                Loading...
+              </div>}
+              
               <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {filtered.map(cat => (
                   <div
@@ -118,8 +134,8 @@ const Quiz = () => {
                 />
               </div>
               <div className='flex space-x-4'>
-                <button onClick={startQuiz} className='bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700'>Start Quiz</button>
-                <button onClick={() => setSelectedCategory(null)} className='bg-gray-300 px-6 py-2 rounded-lg hover:bg-gray-400'>Back</button>
+                <button onClick={startQuiz} className='bg-indigo-600 cursor-pointer text-white px-6 py-2 rounded-lg hover:bg-indigo-700'>Start Quiz</button>
+                <button onClick={() => setSelectedCategory(null)} className='bg-gray-300 cursor-pointer px-6 py-2 rounded-lg hover:bg-gray-400'>Back</button>
               </div>
             </div>
           )}
