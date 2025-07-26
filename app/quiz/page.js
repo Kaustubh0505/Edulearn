@@ -82,11 +82,12 @@ const Quiz = () => {
                   <label htmlFor="categorySearch" className='mr-2 text-sm'>Search Category</label>
                   <input
                     id="categorySearch"
-                    className='w-64 p-2 border rounded-xl focus:ring-2 focus:ring-indigo-500'
+                    className='w-full sm:w-64 p-2 border rounded-xl focus:ring-2 focus:ring-indigo-500'
                     placeholder='Search...'
                     value={searchTerm}
                     onChange={e => setSearchTerm(e.target.value)}
                   />
+
                 </div>
               </div>
 

@@ -49,7 +49,7 @@ function NavLinks() {
         <Link
           key={link.href}
           href={link.href}
-          className="text-gray-400 hover:text-white transition-colors duration-300"
+          className="text-gray-100 hover:text-gray-500 transition-colors duration-300"
         >
           {link.label}
         </Link>

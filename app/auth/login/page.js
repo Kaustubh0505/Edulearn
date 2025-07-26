@@ -21,9 +21,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 to-purple-500">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-500 to-gray-900">
       <div className="bg-white p-8 rounded-lg shadow-lg w-96">
-        <h1 className="text-3xl font-bold text-center text-indigo-600 mb-6">Welcome Back</h1>
+        <h1 className="text-3xl font-bold text-center text-gray-700 mb-6">Welcome Back</h1>
         <form onSubmit={handleLogin}>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -54,7 +54,7 @@ const LoginPage = () => {
           {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
           <button
             type="submit"
-            className="w-full bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-300"
+            className="w-full bg-gray-600 text-white py-2 px-4 cursor-pointer rounded hover:bg-gray-700 transition duration-300"
           >
             Login
           </button>
@@ -63,7 +63,7 @@ const LoginPage = () => {
           <p className="text-sm text-gray-600">Don't have an account?</p>
           <button
             onClick={() => router.push('/auth/signup')}
-            className="text-indigo-600 hover:underline mt-2"
+            className="text-indigo-600 cursor-pointer hover:underline mt-2"
           >
             Signup
           </button>
