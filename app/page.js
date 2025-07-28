@@ -19,9 +19,10 @@ function Home() {
         <div className="w-full text-5xl pl-10 pt-20 font-bold bg-gradient-to-b from-gray-900 to-gray-800 shadow-lg pb-20 relative ">
           <div className="absolute top-0 right-0 w-1/2 h-full">
             <img
-              className="absolute top-0 right-0 w-40 mr-20 mt-20"
+              className="hidden lg:block absolute top-0 right-0 w-40 mr-20 mt-20"
               src="book.svg"
             />
+
           </div>
 
           <div>
