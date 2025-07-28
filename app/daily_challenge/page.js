@@ -14,7 +14,7 @@ const Dailychallenge = () => {
   const [geminiAns, setGeminiAns] = useState("")
   const [streak, setStreak] = useState(0)
 
-  const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_KEY2);
+  const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_KEY);
 
 
 
